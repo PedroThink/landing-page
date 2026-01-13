@@ -101,3 +101,102 @@ header {
 }
 
 /* ------------- INFO SECTION ------------------*/
+
+.info h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark);
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+}
+
+.card-box {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--blue);
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* ------------- QUOTE ------------------*/
+
+.quote {
+    background-color: var(--muted);
+}
+
+.quote p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark);
+}
+
+.quote span {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+/* ------------- CTA ------------------*/
+.cta-box {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-box p {
+    color: var(--muted);
+}
+
+.cta-box button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ------------- FOOTER ------------------*/
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 30px;
+}
+
+/* ------------- RESPONSIVE ------------------*/
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
